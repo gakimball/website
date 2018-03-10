@@ -1,0 +1,22 @@
+{
+  "name": "website",
+  "version": "0.0.1",
+  "description": "My website",
+  "main": "index.html",
+  "scripts": {
+    "start": "cd src && lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/gakimball/website.git"
+  },
+  "author": "Geoff Kimball <geoff@geoffkimball.com> (http://geoffkimball.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gakimball/website/issues"
+  },
+  "homepage": "https://github.com/gakimball/website#readme",
+  "devDependencies": {
+    "lite-server": "^2.3.0"
+  }
+}

@@ -1,0 +1,284 @@
+body {
+  font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: #333;
+  width: 100%;
+}
+
+a {
+  color: #FF00D0;
+  text-decoration: none;
+}
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+
+  .container__inner {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+    @media screen and (min-width: 1024px) {
+      .container__inner {
+        margin-left: 175px;
+        margin-right: 175px;
+      }
+    }
+
+.rainbow-crop {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 50vh;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.rainbow {
+  width: 700px;
+  height: 20px;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 0;
+  right: -190px;
+  background: #6BD598;
+  box-shadow: 0 -20px 0 #3AAAC0, 0 -40px 0 #5C78BF, 0 -60px 0 #7C61B0;
+}
+
+  @media screen and (min-width: 1024px) {
+    .rainbow {
+      width: 700px;
+      height: 30px;
+      right: -120px;
+      box-shadow: 0 -30px 0 #3AAAC0, 0 -60px 0 #5C78BF, 0 -90px 0 #7C61B0;
+    }
+  }
+
+.header {
+  height: 600px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-flow: column nowrap;
+  -ms-align-items: flex-start;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+}
+
+  @media screen and (min-width: 1024px) {
+    .header {
+      height: 100vh;
+    }
+  }
+
+.logo {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+  .logo__text {
+    font-size: 50px;
+    font-weight: 800;
+    font-variant-ligatures: none;
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .logo__icon {
+    width: 42px;
+    height: 38px;
+    position: absolute;
+    left: 0;
+    bottom: 100%;
+    margin-bottom: 10px;
+  }
+
+    @media screen and (min-width: 1024px) {
+      .logo__icon {
+        display: inline-block;
+        position: relative;
+        top: -17px;
+        margin-left: 4px;
+      }
+    }
+
+.links {
+  white-space: nowrap;
+}
+
+.link {
+  font-size: 20px;
+  display: inline-block;
+  text-transform: lowercase;
+  color: black;
+  margin-right: 18px;
+}
+
+  @media screen and (min-width: 1024px) {
+    margin-right: 23px;
+  }
+
+  .link--1 {
+    color: #55B1F2;
+  }
+
+    .link--1::before {
+      background: #55B1F2;
+    }
+
+  .link--2 {
+    color: #5855F2;
+  }
+
+    .link--2::before {
+      background: #5855F2;
+    }
+
+  .link--3 {
+    color: #C855F2;
+  }
+
+    .link--3::before {
+      background: #C855F2;
+    }
+
+  .link::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    margin-right: 8px;
+    position: relative;
+    top: 1px;
+  }
+
+.caret {
+  position: absolute;
+  bottom: 14%;
+  left: 0;
+  transition: opacity 0.25s linear;
+}
+
+  .is-scrolling .caret {
+    opacity: 0;
+  }
+
+.section {
+  margin-bottom: 72px;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  color: #999;
+  text-transform: lowercase;
+  margin-top: 0;
+  margin-bottom: 46px;
+}
+
+.list {
+  font-weight: 600;
+  font-size: 20px;
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 2;
+}
+
+  @media screen and (min-width: 1024px) {
+    .list {
+      padding-left: 80px;
+    }
+  }
+
+  .list--split {
+    clear: both;
+    overflow: hidden;
+  }
+
+      @media screen and (min-width: 1024px) {
+        .list--split .list__item {
+          width: 50%;
+          float: left;
+        }
+      }
+
+  .list-oss .invisible-link {
+    display: block;
+    margin-bottom: -10px;
+  }
+
+    @media screen and (min-width: 1024px) {
+      .list-oss .invisible-link {
+        display: inline-block;
+        width: 50%;
+        margin-bottom: 0;
+      }
+    }
+
+  .list a {
+    font-weight: 800;
+  }
+
+a.invisible-link {
+  font-weight: inherit;
+  color: inherit;
+}
+
+.side-text {
+  font-size: 16px;
+  color: #999;
+  display: inline;
+}
+
+.paragraph {
+  font-size: 16px;
+  line-height: 2;
+}
+
+  @media screen and (min-width: 1024px) {
+    .paragraph {
+      padding-left: 80px;
+    }
+  }
+
+.me {
+  width: 299px;
+  height: 299px;
+  position: relative;
+  margin-top: 80px;
+}
+
+  @media screen and (min-width: 1024px) {
+    .me {
+      margin-left: 80px;
+    }
+  }
+
+  .me::after {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    top: 8px;
+    left: 8px;
+    right: 8px;
+    bottom: 8px;
+    border: 4px solid #fff;
+  }
+
+  .me__photo {
+    width: 100%;
+    height: 100%;
+  }
