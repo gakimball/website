@@ -125,7 +125,9 @@ a {
 }
 
   @media screen and (min-width: 1024px) {
-    margin-right: 23px;
+    .link {
+      margin-right: 23px;
+    }
   }
 
   .link--1 {
