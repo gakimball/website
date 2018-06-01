@@ -7,8 +7,7 @@
 ```shell
 git clone https://github.com/gakimball/website
 cd website
-npm i
-npm start
+npx serve
 ```
 
 ## License
