@@ -275,7 +275,7 @@ a {
 .small-title {
   font-size: 16px;
   font-weight: 900;
-  color: #999;
+  color: #666;
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 14px;
@@ -326,6 +326,11 @@ a {
 
   .list a {
     font-weight: 800;
+  }
+
+  .list--library a {
+    font-weight: inherit;
+    color: inherit;
   }
 
 a.invisible-link {
@@ -391,3 +396,8 @@ a.invisible-link {
       margin-left: 100px;
     }
   }
+
+.pink-text,
+a.pink-text {
+  color: #FF00D0;
+}
